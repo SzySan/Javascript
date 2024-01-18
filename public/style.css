@@ -1,0 +1,213 @@
+* {
+  margin: 20;
+  padding: 0;
+  border: 5;
+  outline: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  background: rgb(169, 238, 238);
+}
+.container {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background: white;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: black;
+}
+.boxTitle {
+  z-index: 1;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 8px 0 8px 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1.4px;
+  width: 70%;
+}
+
+.search-box {
+  float: right;
+  display: block;
+  width: 50%;
+}
+
+.search-box input {
+  display: inline-block;
+  border: 1px solid #707070;
+  line-height: 33px;
+  border-radius: 17px;
+  padding: 0 31px 0 34px;
+  color: #3a3a3a;
+  min-width: 250px;
+  text-transform: uppercase;
+}
+.search-box button {
+  font-size: small;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.search-box button:hover {
+  color: black;
+  background: grey;
+}
+
+.search-box input ::placeholder {
+  font-size: 30px;
+  color: aqua;
+  text-transform: capitalize;
+}
+
+.search-box i {
+  position: flex;
+  font-size: 35px;
+  font-size: large;
+}
+
+.weather-box {
+  display: flex;
+  align-items: center;
+}
+
+.weather-box .temperature {
+  width: 50%;
+  float: left;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+}
+.weather-box .temp {
+  font-size: 64px;
+  line-height: 70px;
+  display: inline-block;
+  font-weight: 400;
+  margin: 7px 0 3px;
+  position: relative;
+}
+.weather-box .deg {
+  font-size: 38px;
+  position: absolute;
+  top: 17px;
+  right: -18px;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 0;
+}
+
+.weather-details {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  vertical-align: baseline;
+}
+.weather-details .desc {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+.param-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.restParamLabel {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.user-section {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-section button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.register-container {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background: white;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: black;
+  text-align: center;
+}
+
+.register-container input {
+  display: inline-block;
+  border: 1px solid #707070;
+  line-height: 33px;
+  border-radius: 17px;
+  padding: 2 10px 0 10px;
+  color: #3a3a3a;
+  min-width: 250px;
+  text-transform: uppercase;
+  width: 80px;
+  text-align: center;
+  margin: auto;
+}
+
+.login-container {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background: white;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: black;
+  text-align: center;
+}
+
+.login-container input {
+  display: inline-block;
+  border: 1px solid #707070;
+  line-height: 33px;
+  border-radius: 17px;
+  padding: 2 10px 0 10px;
+  color: #3a3a3a;
+  min-width: 250px;
+  text-transform: uppercase;
+  width: 80px;
+  text-align: center;
+  margin: auto;
+}
+.user-welcome {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}

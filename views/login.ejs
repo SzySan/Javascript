@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <input
+          type="text"
+          placeholder="Podaj Login"
+          id="username"
+          name="username"
+          required
+        /><br />
+
+        <input
+          type="password"
+          placeholder="Podaj Hasło"
+          id="password"
+          name="password"
+          required
+        /><br />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don't have an account? <a href="/register">Rejestracja</a></p>
+      <p>Back to <a href="/">Strona Główna</a></p>
+    </div>
+    <script src="index.js"></script>
+    <script src="config.js"></script>
+  </body>
+</html>
